@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"serialdsa_dps\startup_stm32f103xb.o"
+"serialdsa_dps\main.o"
+"serialdsa_dps\gpio.o"
+"serialdsa_dps\tim.o"
+"serialdsa_dps\usart.o"
+"serialdsa_dps\stm32f1xx_it.o"
+"serialdsa_dps\stm32f1xx_hal_msp.o"
+"serialdsa_dps\stm32f1xx_hal_gpio_ex.o"
+"serialdsa_dps\stm32f1xx_hal_tim.o"
+"serialdsa_dps\stm32f1xx_hal_tim_ex.o"
+"serialdsa_dps\stm32f1xx_hal.o"
+"serialdsa_dps\stm32f1xx_hal_rcc.o"
+"serialdsa_dps\stm32f1xx_hal_rcc_ex.o"
+"serialdsa_dps\stm32f1xx_hal_gpio.o"
+"serialdsa_dps\stm32f1xx_hal_dma.o"
+"serialdsa_dps\stm32f1xx_hal_cortex.o"
+"serialdsa_dps\stm32f1xx_hal_pwr.o"
+"serialdsa_dps\stm32f1xx_hal_flash.o"
+"serialdsa_dps\stm32f1xx_hal_flash_ex.o"
+"serialdsa_dps\stm32f1xx_hal_exti.o"
+"serialdsa_dps\stm32f1xx_hal_uart.o"
+"serialdsa_dps\system_stm32f1xx.o"
+"serialdsa_dps\pe4x.o"
+--strict --scatter "SerialDSA_DPS\SerialDSA_DPS.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "SerialDSA_DPS.map" -o SerialDSA_DPS\SerialDSA_DPS.axf
